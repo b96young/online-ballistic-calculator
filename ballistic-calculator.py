@@ -105,15 +105,15 @@ for i in range(0,1000):
 
     Cdref = dragCoefficient(vtotal)
 
-    ax = -0.125 * Cdref / BC * pi * airDensity * (vxinitial-wx)**2
+    ax = -1/8 * Cdref / BC * pi * airDensity * (vxinitial-wx)**2
     vxfinal = ax * tdelta + vxinitial
     xfinal = vxinitial * tdelta + xinitial
 
-    ay = -0.125 * Cdref / BC * pi * airDensity * (vxinitial-wx) * (vyinitial-wy)
+    ay = -1/8 * Cdref / BC * pi * airDensity * (vxinitial-wx) * (vyinitial-wy)
     vyfinal = ay * tdelta + vyinitial
     yfinal = vyinitial * tdelta + yinitial
 
-    az = -0.125 * Cdref / BC * pi * airDensity * (vxinitial-wx) * vzinitial - g
+    az = -1/8 * Cdref / BC * pi * airDensity * (vxinitial-wx) * vzinitial - g
     vzfinal = az * tdelta + vzinitial
     zfinal = vzinitial * tdelta + zinitial
 
