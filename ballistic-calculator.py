@@ -9,8 +9,9 @@ def dragCoefficient(v):
 
    # Open up the csv file holding the table of reference Cd values
    # IMPORTANT the file must be in the same location as this python script
+   # Change the "G7.csv " to the name of the csv file containing the data
 
-   with open("G7DragFunction.csv") as G7DragFile:
+   with open("G7.csv") as G7DragFile:
 
        # We create a list containing the rows from the table
        G7Drag = list(csv.reader(G7DragFile))
